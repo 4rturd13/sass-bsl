@@ -1,0 +1,63 @@
+//BREAKPOINTS MOBILE FIRST
+@import "./app";
+@import "./variables";
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .header-container { 
+    .text-container {
+      order: 2;
+    }
+      .image-container {
+        order: 1;
+        .image {
+          width: 80% !important;
+        }
+      }
+    }
+
+  .main-container {
+    .main-content {
+        .image-container {
+            .image {
+                width: 80% !important;
+            }
+          }
+      }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .header-container {   
+    grid-template-rows: 2fr !important;
+    padding: 10rem;
+    .section-container {
+      grid-template-columns: 1fr 1fr !important;
+      padding-top: 0 !important;
+      .image-container {
+        .image {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+
+  .main-container {
+    .main-content {
+      .order-text {
+        order: 2 !important;
+      }
+
+      .order-image {
+        order: 1 !important;
+      }
+      grid-template-columns: 1fr 1fr !important;
+        .image-container {
+            .image {
+                width: 50% !important;
+            }
+          }
+      }
+  }
+}

@@ -1,0 +1,93 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $colorLight;
+    overflow: hidden;
+    .main-content {
+        padding: 0 3.2rem;
+        align-items: center;
+        background-color: $colorLight;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 10rem 0;
+        width: 100%;
+      
+        .order-text {
+            order: 1;
+          }
+
+          .order-image {
+            order: 2;
+          }
+
+        .text-container {
+            align-items: center;
+            text-align: left;
+          .title-section {
+              font-size: 2.5rem;
+              font-weight: 700;
+              width: 100%;
+              padding: 0 1rem;
+          }
+          .paragraph-section {
+              font-size: 1.55rem;
+              font-weight: 400;
+              line-height: 2.56rem;
+              margin-top: 1rem;
+              padding: 0 1rem;
+              width: 100%;
+              
+              .link-inline {
+                  color: $colorLink;
+                  font-size: medium;
+            }
+            .code-text {
+                background-color: $colorGray;
+                padding: 0.5rem;
+                font-size: 1.5rem;
+                border-radius: 0.3rem;
+                color: #3c3c3c;
+            }
+            }
+            pre {
+                text-align: left;
+                margin: 1rem 1.5rem;
+                background-color: $colorGray;
+                font-size: 1rem;
+                border-radius: 0.4rem;
+                padding: 1rem;
+                margin-top: 1em;
+                margin-bottom: 2em;
+              .break-words {
+                  white-space: pre-wrap;
+                  a {
+                      color: $colorLink;
+                      font-weight: 400;
+                      font-size: 1.5rem;
+                      text-align: left;
+                  }
+                }
+            }
+        }
+        .image-container {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1.5rem;
+            .image {
+                width: 100%;
+                border-radius: 0.8rem;
+                box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25),0 8px 16px -8px hsla(0, 0%, 0%, 0.3),0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+            }
+          }
+      }
+}
+
+.links {
+    color: $colorLink;
+    font-size: medium;
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" sizes="any">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <title>Sass Project</title>
+</head>
+<body>
+    <header class="header-container">
+        <section class="section-container">
+            <article class="text-container">
+                <img width="38px" src="/assets/images/logo.svg" alt="logo" />
+                <h1 class="title">Lorem Picsum</h1>
+                <h2 class="subtitle">The Lorem Ipsum for photos.</h2>
+            </article>
+            <figure class="image-container">
+                <img class="image" src="https://picsum.photos/1000/600?random=1" alt="image-picsum">
+            </figure>
+        </section>
+    </header>
+
+<!-- main container start -->
+    <main class="main-container">
+
+        <section class="description-container">
+            <article class="text-container">
+                <h2 class="title-section">Easy to use, stylish placeholders</h2>
+                <p class="paragraph-section">Just add your desired image size (width & height) after our URL, and you'll get a random image.</p>
+                <pre><code class="break-words"><a class="" href="https://picsum.photos/200/300">https://picsum.photos/200/300</a></code></pre>
+                <p class="paragraph-section">To get a square image, just add the size.</p>
+                <pre><code class="break-words"><a class="" href="https://picsum.photos/200">https://picsum.photos/200</a></code></pre>
+            </article>
+        </section>
+
+        <section class="main-content">
+            <article class="text-container">
+                <h2 class="title-section">Specific Image</h2>
+                <p class="paragraph-section">Get a specific image by adding <code class="code-text">/id/{image}</code>to the start of the url.</p>
+                <pre><code class="break-words"><a class="link" href="https://picsum.photos/200/300">https://picsum.photos/id/237/200/300</a></code></pre>
+                <p class="paragraph-section">You can find a list of all the images <a class="link-inline" href="#">here.</a></p>
+            </article>
+            <figure class="image-container">
+                <img class="image" src="https://picsum.photos/id/237/1000/600" alt="image-picsum">
+            </figure>
+        </section>
+
+        <section class="main-content">
+            <article class="text-container order-text">
+                <h2 class="title-section">Grayscale</h2>
+                <p class="paragraph-section">Get a grayscale image by appending <code class="code-text">?grayscale</code> to the end of the url.</p>
+                <pre><code class="break-words"><a class="link" href="https://picsum.photos/200/300">https://picsum.photos/200/300?grayscale</a></code></pre>
+            </article>
+            <figure class="image-container order-image">
+                <img class="image" src="https://picsum.photos/id/1084/1000/600?grayscale" alt="image-picsum">
+            </figure>
+        </section>
+
+        <section class="main-content">
+            <article class="text-container">
+                <h2 class="title-section">Blur</h2>
+                <p class="paragraph-section">Get a blurred image by appending <code class="code-text">?blur</code> to the end of the url.</p>
+                <pre><code class="break-words"><a class="link" href="https://picsum.photos/200/300">https://picsum.photos/200/300?blur=2</a></code></pre>
+                <p class="paragraph-section">Get a blurred image by appending <code class="code-text">1</code> and <code class="code-text">10</code>.</p>
+            </article>
+            <figure class="image-container">
+                <img class="image" src="https://picsum.photos/id/1060/1000/600?blur=2" alt="image-picsum">
+            </figure>
+        </section>
+    </main>
+    <!-- main container end -->
+<footer class="footer">
+    Created by BSL for Module 1
+</footer>
+
+</body>
+</html>
